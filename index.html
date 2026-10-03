@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Teacher's Day ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Music -->
+    <audio id="bgMusic" loop>
+        <source src="salamat.mp3" type="audio/mpeg">
+    </audio>
+
+
+    <!-- Home Page -->
+    <section class="hero" id="home">
+
+        <div class="floating-hearts">
+            <span class="heart heart1">♥</span>
+            <span class="heart heart2">♥</span>
+            <span class="heart heart3">♥</span>
+            <span class="heart heart4">♥</span>
+            <span class="heart heart5">♥</span>
+            <span class="heart heart6">♥</span>
+            <span class="heart heart7">♥</span>
+            <span class="heart heart8">♥</span>
+        </div>
+
+
+        <div class="hero-content">
+
+            <p class="small-text">
+                A little tribute made with love
+            </p>
+
+
+            <!-- Teacher Picture -->
+            <div class="teacher-photo">
+                <img src="cat.webp" alt="My Teacher">
+            </div>
+
+
+            <p class="photo-note">
+                For MAMA Rose who inspires us every day ❤️
+            </p>
+
+
+            <!-- Heart -->
+            <div class="big-heart">
+                <div class="heart-glow"></div>
+            </div>
+
+
+            <!-- Title -->
+            <h1>
+                Happy Teacher's Day!
+                <span>with love & gratitude</span>
+            </h1>
+
+
+            <p class="message">
+                Thank you for your patience, kindness,
+                guidance, and for believing in us
+                even when we doubt ourselves.
+            </p>
+
+
+            <!-- Music Button -->
+            <button class="music-button" id="musicButton" onclick="toggleMusic()">
+                🎵 Play "Salamat"
+            </button>
+
+
+            <!-- Message Button -->
+            <a href="#message" class="continue-btn">
+                Read My Message ♥
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- Message Section -->
+    <section class="message-section" id="message">
+
+        <div class="card">
+
+            <div class="card-heart">♥</div>
+
+            <h2>Dear Teacher,</h2>
+
+            <p>
+                Thank you for being more than just a teacher.
+                You have guided us, encouraged us, and helped us
+                become better students and better people.
+            </p>
+
+            <p>
+                Every lesson, reminder, and word of encouragement
+                means more than we can say.
+            </p>
+
+            <p>
+                Your dedication and patience inspire us to keep
+                learning and continue doing our best.
+            </p>
+
+            <p>
+                We are truly grateful for everything you do for us.
+            </p>
+
+            <div class="signature">
+                Thank you for everything. ❤️
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+        Made with ❤️ for Teacher's Month
+    </footer>
+
+
+    <script>
+
+        let music = document.getElementById("bgMusic");
+        let button = document.getElementById("musicButton");
+
+        function toggleMusic() {
+
+            if (music.paused) {
+                music.play();
+                button.innerHTML = '⏸ Pause "Salamat"';
+            } else {
+                music.pause();
+                button.innerHTML = '🎵 Play "Salamat"';
+            }
+
+        }
+
+    </script>
+
+</body>
+</html>
